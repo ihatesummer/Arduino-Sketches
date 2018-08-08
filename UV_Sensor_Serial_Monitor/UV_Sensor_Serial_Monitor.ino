@@ -49,7 +49,7 @@ void loop() {
   int   sensorValue = analogRead(A0);
 
   // Calculate the actual voltage at sensor out
-  float voltage     = sensorValue * (5.0 / 1023.0);
+  float voltage     = sensorValue * (5.0 / 1023.0); // input voltage = 5.0V, Max analog read value = 1023
 
   //Print the value of the analog input
   Serial.print(sensorValue);
